@@ -1,0 +1,44 @@
+.xmzd-button {
+    position: fixed;
+    right: 10%;
+    bottom: 30%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    background: #e3e3e3;
+    z-index: 99999;
+}
+.xmzd-icon {
+    text-align: center;
+    line-height: 80px;
+}
+.xmzd-button:hover {
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+}
+.xmzd-button:hover .xmzd-icon {
+    display: none;
+}
+.xmzd-btn-wrapper, .xmzd-title, .xmzd-desc {
+    text-align: center;
+    display: none;
+    margin-top: 10px;
+}
+.xmzd-desc {
+    color: red;
+}
+
+.xmzd-button:hover .xmzd-title,
+.xmzd-button:hover .xmzd-btn-wrapper,
+.xmzd-button:hover .xmzd-desc
+{
+    display: block;
+}
+.xmzd-button:hover .xmzd-btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
