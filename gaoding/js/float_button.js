@@ -119,7 +119,7 @@ function download(imgName, blob) {
 
 // 在下载之前将图片放到最大（100%），否则下载的图片会失真，html2canvas是相当于截屏，当前多大截多大，故放大到100%可以保持海报不失真
 function changeImgSize(callback) {
-    var childNode = $('.editor-bottom .eui-buttons-bar')[0].children[1]
+    var childNode = $('.editor-bottom .eui-buttons-bar')[0].children[4];
     var isMax = childNode.firstElementChild.innerText.indexOf('100%') !== -1;
     if(!isMax) {
         childNode.click()
